@@ -1,0 +1,46 @@
+:root {
+  --bg: #f7f5f0;
+  --card: #ffffff;
+  --ink: #1d232b;
+  --muted: #5d6673;
+  --line: #e4e0d8;
+  --accent: #1f3a5f;
+  --accent-ink: #ffffff;
+  --gold: #c8962e;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); }
+
+.page { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+
+.hero h1 { font-size: 40px; line-height: 1.1; margin: 4px 0 8px; letter-spacing: -0.02em; }
+.eyebrow { margin: 0; text-transform: uppercase; font-size: 12px; letter-spacing: 0.12em; color: var(--gold); font-weight: 600; }
+.lede { margin: 0; color: var(--muted); font-size: 17px; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 20px; }
+.chip { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 14px; cursor: pointer; }
+.chip:hover { border-color: var(--accent); }
+.chip-on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.card { display: grid; grid-template-columns: 32px 1fr auto; align-items: center; gap: 16px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+.rank { font-size: 20px; font-weight: 700; color: var(--muted); text-align: center; }
+.body h2 { margin: 0 0 4px; font-size: 18px; }
+.body p { margin: 0 0 8px; color: var(--muted); }
+.tag { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 6px; background: var(--bg); color: var(--muted); }
+
+.vote { display: grid; justify-items: center; gap: 2px; min-width: 56px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--accent); font: inherit; cursor: pointer; }
+.vote:hover { border-color: var(--accent); }
+.vote strong { color: var(--ink); font-size: 15px; }
+
+.footer { margin-top: 32px; color: var(--muted); font-size: 14px; text-align: center; }
+
+@media (max-width: 480px) {
+  .page { padding-top: 32px; }
+  .hero h1 { font-size: 32px; }
+  .card { grid-template-columns: 24px 1fr auto; gap: 12px; padding: 14px; }
+}
