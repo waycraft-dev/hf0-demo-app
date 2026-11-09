@@ -38,6 +38,8 @@ body { margin: 0; background: var(--bg); }
 .vote strong { color: var(--ink); font-size: 15px; }
 
 .footer { margin-top: 32px; color: var(--muted); font-size: 14px; text-align: center; }
+.back-to-top { border: 0; padding: 0; background: none; color: var(--accent); font: inherit; text-decoration: underline; cursor: pointer; }
+.back-to-top:hover { text-decoration-thickness: 2px; }
 
 @media (max-width: 480px) {
   .page { padding-top: 32px; }

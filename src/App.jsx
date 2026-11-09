@@ -54,7 +54,16 @@ export default function App() {
         ))}
       </ol>
 
-      <footer className="footer">A small demo app. Ask an agent to change anything here.</footer>
+      <footer className="footer">
+        <p>A small demo app. Ask an agent to change anything here.</p>
+        <button
+          type="button"
+          className="back-to-top"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+          Back to top
+        </button>
+      </footer>
     </main>
   );
 }
