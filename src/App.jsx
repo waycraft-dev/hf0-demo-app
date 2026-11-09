@@ -37,6 +37,8 @@ export default function App() {
         ))}
       </nav>
 
+      <p className="showing">{shown.length === 1 ? 'Showing 1 launch' : `Showing ${shown.length} launches`}</p>
+
       <ol className="list">
         {shown.map((launch, index) => (
           <li key={launch.id} className="card">
