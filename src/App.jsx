@@ -3,6 +3,9 @@ import { launches as initialLaunches } from './data.js';
 
 const ALL = 'All';
 
+const formatVerified = (isoDate) =>
+  new Date(`${isoDate}T00:00:00`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
 export default function App() {
   const [launches, setLaunches] = useState(initialLaunches);
   const [category, setCategory] = useState(ALL);
@@ -44,7 +47,12 @@ export default function App() {
             <div className="body">
               <h2>{launch.name}</h2>
               <p>{launch.tagline}</p>
-              <span className="tag">{launch.category}</span>
+              <div className="meta">
+                <span className="tag">{launch.category}</span>
+                <span className="verified">
+                  <span aria-hidden="true">✓</span> Last verified <time dateTime={launch.lastVerified}>{formatVerified(launch.lastVerified)}</time>
+                </span>
+              </div>
             </div>
             <button type="button" className="vote" onClick={() => upvote(launch.id)} aria-label={`Upvote ${launch.name}`}>
               <span aria-hidden="true">▲</span>
