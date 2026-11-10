@@ -31,7 +31,9 @@ body { margin: 0; background: var(--bg); }
 .rank { font-size: 20px; font-weight: 700; color: var(--muted); text-align: center; }
 .body h2 { margin: 0 0 4px; font-size: 18px; }
 .body p { margin: 0 0 8px; color: var(--muted); }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .tag { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 6px; background: var(--bg); color: var(--muted); }
+.verified { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; padding: 2px 8px; border-radius: 6px; background: #e8f3ec; color: #24613d; }
 
 .vote { display: grid; justify-items: center; gap: 2px; min-width: 56px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--accent); font: inherit; cursor: pointer; }
 .vote:hover { border-color: var(--accent); }
