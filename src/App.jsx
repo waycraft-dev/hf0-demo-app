@@ -18,7 +18,7 @@ export default function App() {
   return (
     <main className="page">
       <header className="hero">
-        <p className="eyebrow">This week</p>
+        <p className="eyebrow">Preview check: hf0-guest-2 at 1650 PT</p>
         <h1>Launch Board</h1>
         <p className="lede">New things people are shipping. Upvote the ones you would use.</p>
       </header>
