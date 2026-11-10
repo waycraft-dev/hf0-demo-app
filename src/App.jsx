@@ -54,7 +54,7 @@ export default function App() {
         ))}
       </ol>
 
-      <footer className="footer">A small demo app. Ask an agent to change anything here.</footer>
+      <footer className="footer">W3 check by claude on hf0-guest-3 at 2247 PT.</footer>
     </main>
   );
 }
